@@ -1,9 +1,13 @@
-import React from 'react'
+import TopBar from './TopBar';
+import ContentRowTop from './ContentRowTop';
+import Footer from './Footer';
 
 export default function ContentWrapper() {
-    return {
+    return (
         <div>
-        
+            <TopBar />
+            <ContentRowTop />
+            <Footer />
         </div>
-    }
+    )
 }
