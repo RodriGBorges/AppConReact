@@ -21,15 +21,17 @@ export default function Table() {
     ]
 
     return (
-        <div class="divTable">
+        <div className="table-responsive divTable">
 
-            <table>
+            <table className='table table-light'>
                 <thead>
-                    <th>Titulo</th>
-                    <th>Duración</th>
-                    <th>Rating</th>
-                    <th>Genero</th>
-                    <th>Premios</th>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Duración</th>
+                        <th>Rating</th>
+                        <th>Genero</th>
+                        <th>Premios</th>
+                    </tr>
                 </thead>
                 <tbody>
                 <Row filas={fila}/>

@@ -3,7 +3,7 @@ export default function Row(props) {
     return (
         <>
         
-        {props.filas ? filas.map(fila => 
+        {props.filas ? props.filas.map(fila => 
             <tr>
                 <td>{fila.titulo}</td>
                 <td>{fila.duracion}</td>
@@ -11,7 +11,7 @@ export default function Row(props) {
                 <td>
                     {fila.genero.map(genero =>
                     <ul>
-                        <li>{genero.genero}</li>
+                        <li>{genero}</li>
                     </ul>
                     )}
                 </td>
