@@ -2,7 +2,7 @@ import ContentRowMovies from './ContentRowMovies'
 import LastMovieInDB from './LastMovieInDB'
 import GenresInDB from './GenresInDB'
 
-export default function ContentRowTop() {
+export default function ContentRowTop({genres}) {
 
     const info = [
         {
@@ -40,7 +40,7 @@ export default function ContentRowTop() {
 
             <LastMovieInDB />
 
-            <GenresInDB />
+            <GenresInDB genres={genres}/>
 
             </div>
         </div>
